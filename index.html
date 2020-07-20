@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đảo ngược phần tử trong mảng</title>
+</head>
+<body>
+    <script>
+        let Arrays = [-3,5,1,3,2,10];
+        let first = 0;
+        let last = (Arrays.length -1);
+        while (first < last) {
+            //khởi tạo 1 biến b là biến trung gian để chuyển đổi qua lại giữa các vị trí
+            let b =  Arrays[first] ;
+            Arrays[first] = Arrays[last] ;
+           Arrays[last] = b;
+
+            first ++;
+            last --;
+        }
+        console.log(Arrays);
+    </script>
+
+</body>
+</html>
